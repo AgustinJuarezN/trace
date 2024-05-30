@@ -1,26 +1,38 @@
 [
     {
         "id": 1,
-        "title": "What is Notion?",
+        "title": "¿Cómo funciona Trace?",
         "isOpen": true,
-        "content": "Notion is an all-in-one productivity tool that allows you to create notes, databases, and collaborative workspaces, making it easy to organize and manage your tasks, projects, and ideas in one place."
+        "content": "El localizador GPS de Tractive detecta su ubicación mediante satélites GPS y la comunica a través de redes celulares (LTE). Por eso lleva una tarjeta SIM integrada que se conecta automáticamente a las redes celulares locales. A diferencia del AirTag u otros dispositivos de rastreo, el localizador GPS de Tractive puede ubicar a tu amigo de cuatro patas en todo el mundo, siempre que haya suficiente cobertura celular."
     },
     {
         "id": 2,
-        "title": "Who is this template for?",
+        "title": "¿Por qué necesito una suscripción y qué planes hay disponibles?",
         "isOpen": false,
-        "content": "This template is specifically designed for Notion creators who want to create a personalized landing page for their Notion workspace, showcasing their projects, services, or content in a visually appealing manner."
+        "content": "Los localizadores Tractive tienen una tarjeta SIM integrada (igual que tu teléfono) que utiliza las redes móviles disponibles para enviarte la localización. Tu suscripción cubre todas las tarifas necesarias para ello. De este modo, podrás localizar sin límites en todo el mundo. Puedes cancelar tu suscripción en cualquier momento."
     },
     {
         "id": 3,
-        "title": "Do I need to pay for this?",
+        "title": "¿Cuál es la diferencia entre Trace y AirTag?",
         "isOpen": false,
-        "content": "No, this is free."
+        "content": "Los AirTag necesitan estar cerca de otros dispositivos Apple para poder rastrear objetos. Si tu peludo no se encuentra dentro del alcance de un dispositivo Apple, el AirTag no será capaz de ubicarlo. Trace utiliza tecnología GPS y LTE para ofrecer datos precisos de localización en tiempo real en todos los países en los que funciona Trace."
+    },
+    {
+        "id": 4,
+        "title": "¿Qué alcance tiene el localizador GPS de Trace?",
+        "isOpen": false,
+        "content": "Ilimitado. De hecho, puedes seguir los pasos de tu peludo aunque estés en la otra punta del mundo. Además, funciona en más de 175 países. Se requiere cobertura móvil 2G o LTE (CatM1) de uno de nuestros más de 500 operadores para que el dispositivo se conecte en todos los países en los que funciona Trace."
     },
     {
         "id": 5,
-        "title": "Where can I ask more questions about this template?",
+        "title": "¿Cuál es la duración de la batería de un localizador GPS de Trace?",
         "isOpen": false,
-        "content": "If you have any further questions or need assistance regarding this template, please feel free to reach out to me on my website, or click the Contact within the navigation links."
+        "content": "El consumo de energía del dispositivo es relacionados con el ejercicio diario de la mascota. La duración de la batería de 4 días se calcula según a la situación normal de pasear al perro durante 2-3 kilómetros por día (la potencia El consumo se acelerará cuando la condición de la señal es particularmente pobre, si encuentra este tipo de problemas, puede contactar servicio al cliente para consultas y resolución)"
+    },
+    {
+        "id": 6,
+        "title": "¿Cómo empiezo?",
+        "isOpen": false,
+        "content": "Tras comprar tu localizador en la tienda online, solo tienes que descargar la aplicación para Android o iOS y escoger el plan de suscripción que más te convenga. Una vez recibido, puedes colocarlo en casi cualquier collar o arnés para mascotas con los clips o el sistema de sujeción incluidos. Una vez activado el dispositivo dentro de la aplicación, ya puedes empezar a seguir los pasos de tu amigo de cuatro patas para garantizar su seguridad y bienestar las 24 horas del día."
     }
 ]
