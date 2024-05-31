@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Tecnologia de comunicación:",
+        "description": "Utiliza tecnologías como Bluetooth y Ultra-Wideband (UWB) para comunicarse con dispositivos cercanos."
+    },
+    {
+        "title": "Alcance:",
+        "description": "Tiene un alcance limitado, típicamente depende de la proximidad de los dispositivos compatibles (por ejemplo, dispositivos Apple en el caso del AirTag)"
+    },
+    {
+        "title": "Precisión de Ubicación:",
+        "description": "Alta precisión a corta distancia gracias a la tecnología UWB y Bluetooth."
+    },
+    {
+        "title": "Funcionalidad de Seguimiento en Tiempo Real:",
+        "description": "No proporciona seguimiento en tiempo real. Su ubicación se puede actualizar cuando está cerca de un dispositivo compatible."
+    },
+    {
+        "title": "Usos Principales:",
+        "description": "Diseñado para encontrar rápidamente objetos perdidos cercanos, como llaves, billeteras o mochilas."
+    },
+    {
+        "title": "Dependencia de Dispositivos Cercanos",
+        "description": "Depende de la proximidad a dispositivos compatibles para enviar su ubicación."
+    }
+]
