@@ -8,17 +8,17 @@ import Content from './Content.astro';
 import SectionContainer from './SectionContainer.astro';
 import PageTitle from './PageTitle.astro';
 import { Icon } from 'astro-icon';
-// import { Image } from "@astrojs/image/components";
+import { Image } from '@astrojs/image/components';
 import { MotionBTTContainer } from './motion/MotionBTTContainer.jsx';
 ---
 
-<SectionContainer class="page-banner--container py-16">
-	<SectionContainer class="page-banner--inner-container wrap wrap-px z-10">
+<SectionContainer class="page-banner--container pb-16">
+	<SectionContainer class="page-banner--inner-container z-10">
 		<!-- <BadgeGroup alignment="center">
             <BadgeMessage>Discover NutriTrack!</BadgeMessage>
             <BadgeIcon icon="mdi:hand-wave" />
         </BadgeGroup> -->
-		<PageTitle class="text-center mx-auto" type="heavy">Mantén a tu mascota siempre localizada con Trace</PageTitle>
+		<!-- <PageTitle class="text-center mx-auto" type="heavy">Mantén a tu mascota siempre localizada con Trace</PageTitle>
 		<Content class="text-center" alignment="center">
 			<p>
 				Descubre la tranquilidad de saber dónde está tu amigo peludo en cada momento{' '}
@@ -32,18 +32,9 @@ import { MotionBTTContainer } from './motion/MotionBTTContainer.jsx';
 					<Icon name="mdi:arrow-right" class="w-6" />
 				</a>
 			</ButtonGroup>
-		</div>
+		</div> -->
 		<div class="page-banner--image">
-			<!-- <Image
-                src={"/images/dog-in-studio.avif"}
-                width={1024}
-                height={680}
-                alt={"Page Banner"}
-                objectFit={"cover"}
-                aspectRatio={16 / 9}
-                format={"webp"}
-                class="mx-auto"
-            /> -->
+			<img src={'/images/Web0.jpg'} alt={'Page Banner'} class="mx-auto" />
 		</div>
 	</SectionContainer>
 </SectionContainer>

@@ -2,7 +2,6 @@
 import SectionContainer from './SectionContainer.astro';
 import ButtonGroup from './button/ButtonGroup.astro';
 import { Icon } from 'astro-icon';
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import ContactForm from '@/components/ContactForm.jsx';
 import PageTitle from './PageTitle.astro';
 
@@ -11,17 +10,34 @@ const date = new Date();
 const year = date.getFullYear();
 ---
 
-<footer id="footer" class="bg-black-300">
-	<SectionContainer class="footer--container wrap wrap-px relative z-10">
+<footer id="footer" class="bg-white">
+<SectionContainer class="footer--container wrap wrap-px relative z-10">
 		<PageTitle class="text-center mx-auto pt-3" type="light">¿Cómo podemos ayudarte?</PageTitle>
 		<!-- <span>¿Cómo podemos ayudarte?</span> -->
 		<ContactForm client:load />
 	</SectionContainer>
-
 	{/* Footer Links */}
 	<SectionContainer class="footer--container wrap wrap-px relative z-10">
-		<div class="footer--content-container">
+		<div class="footer--content-container py-16">
 			<div class="footer-links mb-12 grid grid-cols-2 gap-8 md:mb-16 md:grid-cols-8 lg:grid-cols-12">
+				<div class="col-span-6">
+					<div class="footer--logo grid gap-8">
+						<a href="/">
+							<img src="/images/logo.png" alt="logo" class="h-8 w-auto" />
+						</a>
+						{/* Get Template button; remove if not used */}
+						<ButtonGroup alignment="left">
+							<a
+								role="button"
+								href="https://github.com/christian-luntok/astro-nutritrack"
+								class="btn btn--secondary"
+							>
+								Obtener Trace
+								<Icon name="mdi:arrow-right" class="w-6" />
+							</a>
+						</ButtonGroup>
+					</div>
+				</div>
 				<div class="col-span-6">
 					<div class="footer-menu grid grid-cols-2 md:grid-cols-8 lg:grid-cols-12">
 						{
@@ -49,16 +65,12 @@ const year = date.getFullYear();
 			</div>
 		</div>
 	</SectionContainer>
-
 	{/* Footer Credits */}
 	<SectionContainer class="footer-credits relative z-10">
 		<div class="wrap wrap-px py-6">
 			<p class="my-0">
-				Trace © {year}. Todos los derechos reservados.
+				© {year} Trace. Todos los derechos reservados
 			</p>
-			<!-- <span class="float-right">
-				<FloatingWhatsApp phoneNumber="573002222222" accountName="NutriTrack" />
-			</span> -->
 		</div>
 	</SectionContainer>
 	<div class="footer--background"></div>
