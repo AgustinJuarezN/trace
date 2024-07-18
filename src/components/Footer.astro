@@ -2,8 +2,6 @@
 import SectionContainer from './SectionContainer.astro';
 import ButtonGroup from './button/ButtonGroup.astro';
 import { Icon } from 'astro-icon';
-import ContactForm from '@/components/ContactForm.jsx';
-import PageTitle from './PageTitle.astro';
 
 const { footerNavData } = Astro.props;
 const date = new Date();
@@ -11,11 +9,6 @@ const year = date.getFullYear();
 ---
 
 <footer id="footer" class="bg-white">
-<SectionContainer class="footer--container wrap wrap-px relative z-10">
-		<PageTitle class="text-center mx-auto pt-3" type="light">¿Cómo podemos ayudarte?</PageTitle>
-		<!-- <span>¿Cómo podemos ayudarte?</span> -->
-		<ContactForm client:load />
-	</SectionContainer>
 	{/* Footer Links */}
 	<SectionContainer class="footer--container wrap wrap-px relative z-10">
 		<div class="footer--content-container py-16">
@@ -48,11 +41,14 @@ const year = date.getFullYear();
 										{footerLinks.items.map((footerItem) => (
 											<li class="footer-menu--list-item gap-2">
 												<a
-													class="mb-2 block w-auto font-medium transition-colors duration-300 hover:text-secondary-700"
+													class="mb-2 w-auto font-medium transition-colors duration-300 hover:text-secondary-700"
 													href={footerItem.href}
 													target={footerItem.target}
 												>
-													{footerItem.label}
+													<Icon
+														name={`mdi:${footerItem.label.toLowerCase()}`}
+														class="h-6 mr-1 text-secondary-500"
+													/>
 												</a>
 											</li>
 										))}
@@ -65,6 +61,7 @@ const year = date.getFullYear();
 			</div>
 		</div>
 	</SectionContainer>
+
 	{/* Footer Credits */}
 	<SectionContainer class="footer-credits relative z-10">
 		<div class="wrap wrap-px py-6">

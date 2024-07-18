@@ -20,6 +20,7 @@ import CardBody from '@/components/card/CardBody.astro';
 import CardImage from '@/components/card/CardImage.astro';
 import CardHeader from '@/components/card/CardHeader.astro';
 import Column from '@/components/Column.astro';
+import ContactForm from '@/components/ContactForm';
 ---
 
 <Layout
@@ -112,6 +113,10 @@ import Column from '@/components/Column.astro';
 				</BadgeGroup>
 				<PageTitle class="text-center mx-auto" type="default">¿Tienes preguntas?</PageTitle>
 				<Accordion accordionData={faqData} />
+			</SectionContainer>
+			<SectionContainer id="contact" class="faq">
+				<PageTitle class="text-center mx-auto pt-3" type="light">¿Cómo podemos ayudarte?</PageTitle>
+				<ContactForm client:load />
 			</SectionContainer>
 		</SectionContainer>
 	</div>
