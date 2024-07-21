@@ -44,7 +44,7 @@ export default function ContactForm() {
 				/>
 			</div>
 			<div>
-				<button type="submit" disabled={state.submitting} class="btn btn--secondary w-full">
+				<button type="submit" disabled={state.submitting} className="btn btn--secondary w-full">
 					Enviar
 				</button>
 			</div>
