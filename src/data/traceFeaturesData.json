@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Tecnologia de comunicación:",
+        "description": "Utiliza señales de satélite GPS para determinar la ubicación y a menudo se complementa con redes móviles para transmitir la información"
+    },
+    {
+        "title": "Alcance:",
+        "description": "Tiene cobertura global, puede determinar la ubicación en cualquier lugar del mundo donde haya señal de satélite."
+    },
+    {
+        "title": "Precisión de Ubicación:",
+        "description": "Alta precisión a nivel global, proporcionando coordenadas exactas en tiempo real."
+    },
+    {
+        "title": "Funcionalidad de Seguimiento en Tiempo Real:",
+        "description": "Ofrece seguimiento en tiempo real, permitiendo monitorear movimientos y registrar el historial de ubicaciones."
+    },
+    {
+        "title": "Usos Principales:",
+        "description": "Utilizado para seguimiento de vehículos, personas, mascotas o cualquier objeto que necesite ser monitoreado a lo largo de distancias más largas y en tiempo real."
+    },
+    {
+        "title": "Dependencia de Dispositivos Cercanos:",
+        "description": "Funciona de manera independiente, utilizando satélites y redes móviles para transmitir su ubicación."
+    }
+]
