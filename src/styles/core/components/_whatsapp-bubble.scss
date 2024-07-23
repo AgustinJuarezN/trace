@@ -1,0 +1,32 @@
+@layer components {
+	.whatsapp-bubble {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		width: 60px;
+		height: 60px;
+		background-color: #25d366;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+		cursor: pointer;
+		animation: float 3s ease-in-out infinite; /* Floating animation */
+
+		img {
+			width: 30px;
+			height: 30px;
+		}
+	}
+
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-10px);
+		}
+	}
+}
