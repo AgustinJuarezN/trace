@@ -1,0 +1,14 @@
+<div class="whatsapp-bubble">
+	<img src="/images/WhatsApp_icon.png" alt="WhatsApp" />
+</div>
+
+<script>
+	function handleClick() {
+		const phoneNumber = '+59892925235';
+		const preMessage = 'Hola, me gustaría saber más sobre Trace.';
+		const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(preMessage)}`;
+		window.open(url, '_blank');
+	}
+
+	document.querySelector('.whatsapp-bubble').addEventListener('click', handleClick);
+</script>
