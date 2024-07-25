@@ -2,7 +2,7 @@
 import SectionContainer from './SectionContainer.astro';
 import ButtonGroup from './button/ButtonGroup.astro';
 import { Icon } from 'astro-icon';
-import { Image } from '@astrojs/image/components';
+import TermsAndConditions from './modals/TermsAndConditions.astro';
 
 const { footerNavData } = Astro.props;
 const date = new Date();
@@ -12,9 +12,9 @@ const year = date.getFullYear();
 <footer id="footer" class="bg-white">
 	{/* Footer Links */}
 	<SectionContainer class="footer--container wrap wrap-px relative z-10">
-		<div class="footer--content-container py-16">
-			<div class="footer-links mb-12 grid grid-cols-2 gap-8 md:mb-16 md:grid-cols-8 lg:grid-cols-12">
-				<div class="col-span-6">
+		<div class="footer--content-container pt-5">
+			<div class="footer-links grid grid-cols-2 md:mb-3 md:grid-cols-8 lg:grid-cols-12">
+				<!-- <div class="col-span-4">
 					<div class="footer--logo grid gap-8">
 						<a href="/">
 							<img src="/images/logo.png" alt="logo" class="h-8 w-auto" />
@@ -31,22 +31,25 @@ const year = date.getFullYear();
 							</a>
 						</ButtonGroup>
 					</div>
-				</div>
-				<div class="col-span-6">
+				</div> -->
+				<div class="sm:col-span-12 md:col-span-6 flex flex-col items-center justify-center text-center">
 					<div class="footer-menu grid grid-cols-2 md:grid-cols-8 lg:grid-cols-12">
 						{
 							footerNavData.map((footerLinks) => (
 								<div class="footer-menu--container col-span-1 md:col-span-4">
 									<h3 class="font-bold text-base mb-2">{footerLinks.title}</h3>
-									<ul class="footer-menu--list">
+									<ul class="footer-menu--list flex items-center justify-center">
 										{footerLinks.items.map((footerItem) => (
 											<li class="footer-menu--list-item gap-2">
 												<a
-													class="mb-2 block w-auto font-medium transition-colors duration-300 hover:text-secondary-700"
+													class="mb-2 w-auto font-medium transition-colors duration-300 hover:text-secondary-700"
 													href={footerItem.href}
 													target={footerItem.target}
 												>
-													{footerItem.label}
+													<Icon
+														name={`mdi:${footerItem.label.toLowerCase()}`}
+														class="h-6 mr-1 text-secondary-500"
+													/>
 												</a>
 											</li>
 										))}
@@ -56,16 +59,21 @@ const year = date.getFullYear();
 						}
 					</div>
 				</div>
+				<div class="sm:col-span-12 md:col-span-6 flex flex-col items-center justify-center text-center">
+					<h3 class="font-bold text-base mb-2">Empresa</h3>
+					<TermsAndConditions />
+				</div>
 			</div>
 		</div>
 	</SectionContainer>
-	{/* Footer Credits */}
-	<SectionContainer class="footer-credits relative z-10">
-		<div class="wrap wrap-px py-6">
-			<p class="my-0">
-				© {year} Trace. Todos los derechos reservados
-			</p>
-		</div>
-	</SectionContainer>
-	<div class="footer--background"></div>
 </footer>
+
+{/* Footer Credits */}
+<SectionContainer class="footer-credits relative">
+	<div class="wrap wrap-px py-6">
+		<p class="my-0">
+			© {year} Trace. Todos los derechos reservados
+		</p>
+	</div>
+</SectionContainer>
+<div class="footer--background"></div>

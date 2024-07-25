@@ -1,7 +1,6 @@
 ---
 import SectionContainer from './SectionContainer.astro';
 import { Icon } from 'astro-icon';
-import { Image } from '@astrojs/image/components';
 
 const { contentImageData } = Astro.props;
 ---
@@ -11,11 +10,10 @@ const { contentImageData } = Astro.props;
 		contentImageData.map((item) => (
 			<div id={item.id} class="process-item--container grid md:grid-cols-2 gap-y-8">
 				<div class={`process-item--image rounded-3xl ${item.align === 'left' ? 'md:order-1' : ''}`}>
-					<Image
+					<img
 						src={item.image}
 						width={550}
 						height={380}
-						aspectRatio={1 / 1}
 						alt="Process Banner 1"
 						class="drop-shadow-xl w-full offset-y-0 offset-x-8 blur-16 object-cover"
 					/>
