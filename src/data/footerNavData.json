@@ -1,15 +1,10 @@
 [
 	{
-		"title": "Conócenos",
+		"title": "Sobre nosotros",
 		"items": [
 			{
-				"label": "LinkedIn",
-				"href": "https://github.com/christian-luntok/astro-nutritrack",
-				"target": "_blank"
-			},
-			{
 				"label": "Instagram",
-				"href": "https://github.com/christian-luntok/astro-nutritrack",
+				"href": "https://www.instagram.com/trace.gps/",
 				"target": "_blank"
 			},
 			{

@@ -1,12 +1,7 @@
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactForm() {
 	const [state, handleSubmit] = useForm('xknddjeb');
-
-	if (state?.succeeded) {
-		return <p className="text-green-500">Thanks for joining!</p>;
-	}
 
 	return (
 		<form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto p-4 bg-white shadow-md rounded-md">
@@ -44,9 +39,18 @@ export default function ContactForm() {
 				/>
 			</div>
 			<div>
-				<button type="submit" disabled={state.submitting} className="btn btn--secondary w-full">
+				<button
+					type="submit"
+					disabled={state.submitting || state.succeeded}
+					className="btn btn--secondary w-full"
+				>
 					Enviar
 				</button>
+			</div>
+			<div>
+				<span className="text-green-600 mt-2 pt-2">
+					{state?.succeeded ? 'Su mensaje ha sido enviado correctamente!' : ''}
+				</span>
 			</div>
 		</form>
 	);

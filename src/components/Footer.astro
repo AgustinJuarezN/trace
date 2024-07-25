@@ -10,50 +10,11 @@ const date = new Date();
 const year = date.getFullYear();
 ---
 
-<!-- <style>
-	/* Estilos para el modal */
-	#dialog {
-		display: none;
-		position: fixed;
-		z-index: 1;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		overflow: auto;
-		background-color: rgb(0, 0, 0);
-		background-color: rgba(0, 0, 0, 0.4);
-	}
-
-	/* Estilos para el contenido del modal */
-	#dialogContent {
-		background-color: #fefefe;
-		margin: 15% auto;
-		padding: 20px;
-		border: 1px solid #888;
-		width: 80%;
-	}
-
-	/* Estilos para el botón de cerrar */
-	.close {
-		color: #aaa;
-		float: right;
-		font-size: 28px;
-		font-weight: bold;
-	}
-
-	.close:hover,
-	.close:focus {
-		color: black;
-		text-decoration: none;
-		cursor: pointer;
-	}
-</style> -->
 <footer id="footer" class="bg-white">
 	{/* Footer Links */}
 	<SectionContainer class="footer--container wrap wrap-px relative z-10">
 		<div class="footer--content-container pt-5">
-			<div class="footer-links mb-12 grid grid-cols-2 gap-2 md:mb-16 md:grid-cols-8 lg:grid-cols-12">
+			<div class="footer-links grid grid-cols-2 md:mb-3 md:grid-cols-8 lg:grid-cols-12">
 				<!-- <div class="col-span-4">
 					<div class="footer--logo grid gap-8">
 						<a href="/">
@@ -78,7 +39,7 @@ const year = date.getFullYear();
 							footerNavData.map((footerLinks) => (
 								<div class="footer-menu--container col-span-1 md:col-span-4">
 									<h3 class="font-bold text-base mb-2">{footerLinks.title}</h3>
-									<ul class="footer-menu--list flex">
+									<ul class="footer-menu--list flex items-center justify-center">
 										{footerLinks.items.map((footerItem) => (
 											<li class="footer-menu--list-item gap-2">
 												<a
@@ -101,48 +62,7 @@ const year = date.getFullYear();
 				</div>
 				<div class="sm:col-span-12 md:col-span-6 flex flex-col items-center justify-center text-center">
 					<h3 class="font-bold text-base mb-2">Empresa</h3>
-					<span class="block">Cómo comprar</span>
-					<span class="block">Envíos y devoluciones</span>
-					<!-- <label for="tw-modal" class="block cursor-pointer">Términos y condiciones</label> -->
-
-					<button id="openDialog">Términos y condiciones</button>
 					<TermsAndConditions />
-
-					<!-- Modal -->
-					<!-- <div id="dialog">
-						<div id="dialogContent">
-							<span class="close">&times;</span>
-							<p>Hello world!</p>
-						</div>
-					</div> -->
-
-					<!-- <script>
-						let isOpen = false;
-
-						// Set the store to true when the button is clicked
-						function openDialog() {
-							isOpen = true;
-							updateDialog();
-						}
-
-						// Add an event listener to the button
-						document.getElementById('openDialog').addEventListener('click', openDialog);
-
-						// Close the modal when the user clicks on <span> (x)
-						document.querySelector('.close').addEventListener('click', function () {
-							isOpen = false;
-							updateDialog();
-						});
-
-						// Function to show/hide the dialog based on isOpen
-						function updateDialog() {
-							if (isOpen) {
-								document.getElementById('dialog').style.display = 'block';
-							} else {
-								document.getElementById('dialog').style.display = 'none';
-							}
-						}
-					</script> -->
 				</div>
 			</div>
 		</div>
@@ -150,7 +70,7 @@ const year = date.getFullYear();
 </footer>
 
 {/* Footer Credits */}
-<SectionContainer class="footer-credits relative z-10">
+<SectionContainer class="footer-credits relative">
 	<div class="wrap wrap-px py-6">
 		<p class="my-0">
 			© {year} Trace. Todos los derechos reservados
