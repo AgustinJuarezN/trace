@@ -4,6 +4,10 @@ import Nav from './Nav.astro';
 import ButtonGroup from './button/ButtonGroup.astro';
 import { Icon } from 'astro-icon';
 import navData from '@/data/navData.json';
+
+const phoneNumber = '+59892925235';
+const preMessage = 'Hola, me gustaría saber cómo poder obtener Trace.';
+const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(preMessage)}`;
 ---
 
 <header
@@ -21,11 +25,7 @@ import navData from '@/data/navData.json';
 		<SectionContainer class="flex items-center ml-auto">
 			<Nav navItems={navData} />
 			<ButtonGroup class="hidden md:block">
-				<a
-					role="button"
-					href="https://github.com/christian-luntok/astro-nutritrack"
-					class="btn btn--secondary ml-4"
-				>
+				<a role="button" href={url} class="btn btn--secondary ml-4">
 					Obtener Trace
 					<Icon name="mdi:arrow-right" class="w-6" />
 				</a>
