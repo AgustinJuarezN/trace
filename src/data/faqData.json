@@ -3,13 +3,13 @@
         "id": 1,
         "title": "¿Cómo funciona Trace?",
         "isOpen": true,
-        "content": "El localizador GPS de Tractive detecta su ubicación mediante satélites GPS y la comunica a través de redes celulares (LTE). Por eso lleva una tarjeta SIM integrada que se conecta automáticamente a las redes celulares locales. A diferencia del AirTag u otros dispositivos de rastreo, el localizador GPS de Tractive puede ubicar a tu amigo de cuatro patas en todo el mundo, siempre que haya suficiente cobertura celular."
+        "content": "El localizador GPS de Trace detecta su ubicación mediante satélites GPS y la comunica a través de redes celulares (LTE). Por eso lleva una tarjeta SIM integrada que se conecta automáticamente a las redes celulares locales. A diferencia del AirTag u otros dispositivos de rastreo, el localizador GPS de Trace puede ubicar a tu amigo de cuatro patas en todo el mundo, siempre que haya suficiente cobertura celular."
     },
     {
         "id": 2,
         "title": "¿Por qué necesito una suscripción y qué planes hay disponibles?",
         "isOpen": false,
-        "content": "Los localizadores Tractive tienen una tarjeta SIM integrada (igual que tu teléfono) que utiliza las redes móviles disponibles para enviarte la localización. Tu suscripción cubre todas las tarifas necesarias para ello. De este modo, podrás localizar sin límites en todo el mundo. Puedes cancelar tu suscripción en cualquier momento."
+        "content": "Los localizadores Trace tienen una tarjeta SIM integrada (igual que tu teléfono) que utiliza las redes móviles disponibles para enviarte la localización. Tu suscripción cubre todas las tarifas necesarias para ello. De este modo, podrás localizar sin límites en todo el mundo. Puedes cancelar tu suscripción en cualquier momento."
     },
     {
         "id": 3,
@@ -33,6 +33,6 @@
         "id": 6,
         "title": "¿Cómo empiezo?",
         "isOpen": false,
-        "content": "Tras comprar tu localizador en la tienda online, solo tienes que descargar la aplicación para Android o iOS y escoger el plan de suscripción que más te convenga. Una vez recibido, puedes colocarlo en casi cualquier collar o arnés para mascotas con los clips o el sistema de sujeción incluidos. Una vez activado el dispositivo dentro de la aplicación, ya puedes empezar a seguir los pasos de tu amigo de cuatro patas para garantizar su seguridad y bienestar las 24 horas del día."
+        "content": "Tras comprar tu localizador en nuestros canales de venta (WhatsApp e Instagram), solo tienes que descargar la aplicación para Android o iOS e ingresar con las credenciales brindadas por el equipo de Trace. Una vez recibido, puedes colocarlo en casi cualquier collar o arnés para mascotas con los clips. Una vez activado el dispositivo dentro de la aplicación, ya puedes empezar a seguir los pasos de tu amigo de cuatro patas para garantizar su seguridad y bienestar las 24 horas del día."
     }
 ]
