@@ -6,11 +6,29 @@ import Footer from '@/components/Footer.astro';
 import footerNavData from '@/data/footerNavData.json';
 
 const { class: className, title, description, keywords, url, image } = Astro.props;
+
+declare global {
+	interface Window {
+		dataLayer: any[];
+		gtag: (...args: any[]) => void;
+	}
+}
 ---
 
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-9PJ2RGWHBS"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			window.gtag = function () {
+				window.dataLayer.push(arguments);
+			};
+			window.gtag('js', new Date());
+
+			window.gtag('config', 'G-9PJ2RGWHBS');
+		</script>
 		<SEO title={title} description={description} keywords={keywords} url={url} image={image} />
 	</head>
 	<body>

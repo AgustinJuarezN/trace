@@ -1,5 +1,4 @@
 [
 	{ "name": "Características", "to": "#features", "href": "/#features" },
-	{ "name": "FAQ", "to": "#faq", "href": "/#faq" },
-	{ "name": "Contacto", "to": "#contact", "href": "/#contact" }
+	{ "name": "FAQ", "to": "#faq", "href": "/#faq" }
 ]
